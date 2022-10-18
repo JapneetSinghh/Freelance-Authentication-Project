@@ -36,7 +36,7 @@
   margin-bottom: 10px;
   width: 300px;
   text-align: center;
-  text-transform: capitalize;
+/*   text-transform: capitalize; */
   letter-spacing: 2px;
 }
 .login-form input:focus{
