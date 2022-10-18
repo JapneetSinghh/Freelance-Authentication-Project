@@ -1,0 +1,41 @@
+{
+  "name": "webdevproject",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.6.5",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
+  },
+  "description": "COMP229 - Express Portfolio",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehakkaur21/finalportfolio.git"
+  },
+  "author": "Mehak kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehakkaur21/finalportfolio.git/issues"
+  },
+  "homepage": "https://github.com/mehakkaur21/finalportfolio#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
