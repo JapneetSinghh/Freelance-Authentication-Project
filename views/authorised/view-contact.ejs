@@ -1,0 +1,48 @@
+<%- include ../partials/header.ejs %>
+  <%- include ../partials/main_nav.ejs %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- <h1><%=contact.name%></h1>
+    <h1><%=contact.email%></h1>
+    <h1><%=contact.contactNumber%></h1>
+    <h1><%=contact.description%></h1> -->
+    <main style="padding: 25px;" class="center-align-content">
+      <div style="width:100% ;" class="business-contacts-container">
+        <nav style="margin-top: 1rem;" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/businessContacts">Business Contacts</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View Contact</li>
+          </ol>
+        </nav>
+
+        <form action="/editUser" method="post" class="edit-contactForm">
+          <div class="edit-form-inputs">
+            <div class="form-floating mb-3">
+              <input readonly type="text" name="name" class="form-control" id="floatingInput" placeholder="Name"
+                value="<%=contact.name%>">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input readonly type="text" name="name" class="form-control" id="floatingInput" placeholder="name@example.com"
+                value="<%=contact.contactNumber%>">
+              <label for="floatingInput">Contact Number</label>
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input readonly type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+              value="<%=contact.email%>">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea readonly type="text" name="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+              value="<%=contact.email%>" style="height: 200px;"><%=contact.description%>
+            </textarea>
+            <label for="floatingInput">Description</label>
+          </div>
+        </form>
+      </div>
+
+
+
+    </main>
+
+    <%- include ../partials/footer.ejs %>
