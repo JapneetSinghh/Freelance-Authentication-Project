@@ -17,10 +17,9 @@ exports.getLogin = (req, res, next) => {
 }
 exports.postLogin = (req, res, next) => {
   // GETTING USERNAME AND PASSWORD ENTERED BY USER FROM BODY
-    var username = req.body.username;
-    const password = req.body.password;
-    username = username.toString();
-    console.log(username, password);
+  const username = req.body.username;
+  const password = req.body.password;
+  console.log(username, password);
 
   // USING MONGOOSE FUNCTION FINDONE() TO CHECK IF THE USERNAME EXIST IN THE DATABASE
   user.findOne({ username: username })
@@ -38,7 +37,7 @@ exports.postLogin = (req, res, next) => {
               console.log('VALID USERNAME AND PASSWORD');
               req.session.isLoggedIn = true;
               req.session.user = user;
-              res.redirect('/');
+              res.redirect('/businessContacts');
               console.log('SESSION STATUS ' + req.session.isLoggedIn)
             }
             else {

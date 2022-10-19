@@ -67,7 +67,7 @@ exports.postEditContact = (req, res, next) => {
   const updatedEmail=req.body.email;
   const updatedDesc=req.body.description;
   const updatedContactNumber=req.body.contactNumber;
-  req.flash('contactDeleted',`Contact :${updatedName} Updated Successfully !!` );
+  req.flash('contactDeleted',`Contact: ${updatedName} Updated Successfully !!` );
 
   // FINDING THE CONTACT AND OVERWRITING ITS DATA
   BusinessContact.findById(contactId)

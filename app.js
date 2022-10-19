@@ -32,14 +32,15 @@ const store = new MongoDBStore({
   uri: MONGODB_URI,
   collection: 'sessions'
 })
-app.use(
-  session({
-    secret: 'my secret',
-    resave: 'false',
-    saveUninitialized: false,
-    store: store
-  })
-);
+  app.use(
+    session({
+      secret: 'my secret',
+      resave: 'false',
+      saveUninitialized: false,
+      store: store
+    })
+  );
+
 
 // ADDING AUTHENTICATION STATUS
 app.use((req, res, next) => {
