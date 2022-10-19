@@ -53,15 +53,14 @@ form {
 }
 
 
-
 table.GeneratedTable {
   width: 100%;
-  background-color: #f87ad2;
+  background-color: #ffffff;
   border-collapse: collapse;
   border-width: 2px;
   border-color: #091100;
   border-style: solid;
-  color: #f5f5f5;
+  color: #333;
 }
 
 table.GeneratedTable td, table.GeneratedTable th {
@@ -73,6 +72,7 @@ table.GeneratedTable td, table.GeneratedTable th {
 
 table.GeneratedTable thead {
   background-color: #000000;
+  color: #ffffff;
 }
 
 body {
@@ -129,15 +129,18 @@ body {
 }
 
 .align-center {
-  min-height: 70vh;
+  min-height: 90vh;
   display: grid;
   place-items: center;
+}
+body{
+  position: relative;
 }
 
 footer {
   background-color: rgb(17, 17, 17);
-  bottom: 0;
-  position: fixed;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
   padding: 10px;
 }

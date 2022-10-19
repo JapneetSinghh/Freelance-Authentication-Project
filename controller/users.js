@@ -1,6 +1,15 @@
+// USER CONTROLLER
+/*
+File Name: users.js
+Name: Mehak kaur 
+Student ID 301232188
+Date 20 October, 2022
+*/
+
 const user = require('../Models/user');
 const bcryptjs = require('bcryptjs');
 
+// RENDERS THE LOGIN PAGE WITH WARNINGS IF ANY
 exports.getLogin = (req, res, next) => {
   // USING FLASH() FOR SENDING RESPONSE TO USER 
   let message = req.flash('error');
@@ -15,6 +24,8 @@ exports.getLogin = (req, res, next) => {
   })
 
 }
+
+// CHECKS THE ENTERED CREDENTIALS IF THEY ARE CORRECT OR NOT
 exports.postLogin = (req, res, next) => {
   // GETTING USERNAME AND PASSWORD ENTERED BY USER FROM BODY
   const username = req.body.username;
@@ -49,6 +60,8 @@ exports.postLogin = (req, res, next) => {
       }
     });
 }
+
+// LOGOUT FUNCTION THAT DELETS CURRENT SESSION
 exports.postLogout = (req, res, next) => {
   req.session.destroy((err) => {
     if (err) {
