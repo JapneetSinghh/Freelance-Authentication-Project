@@ -91,3 +91,18 @@ body {
 .edit-form-inputs >div{
   width: 49.5%;
 }
+.jumbotron{
+  margin:25px;
+}
+.align-center{
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+}
+footer{
+  background-color: rgb(17, 17, 17);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+}
