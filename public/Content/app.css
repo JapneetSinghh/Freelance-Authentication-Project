@@ -5,43 +5,49 @@
   * Oct 6, 20212
 */
 .myimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50;
-    height: 80;
-  }
-  .lefttext {
-    display: block;
-    text-align: left;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50;
+  height: 80;
+}
 
-  button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.lefttext {
+  display: block;
+  text-align: left;
+}
 
-  .container{  
-    text-align: center;
-    }  
-    body{
-      background-color: papayawhip;
-  }
-  
-  h3{
-      color: black;
-  }
-  
-  button{
-      background-color: darksalmon;
-  }  
-     #left{    
-      float: left;  
-      }  
-      #right{    
-      float: right;
-    }
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+body {
+  background-color: papayawhip;
+  min-height: 100vh;
+}
+
+h3 {
+  color: black;
+}
+
+button {
+  background-color: darksalmon;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
+}
+
 form {
   text-align: center;
 }
@@ -49,57 +55,62 @@ form {
 
 
 table.GeneratedTable {
-width:100%;
-background-color:#f87ad2;
-border-collapse:collapse;border-width:2px;
-border-color:#091100;
-border-style:solid;
-color:#f5f5f5;
+  width: 100%;
+  background-color: #f87ad2;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #091100;
+  border-style: solid;
+  color: #f5f5f5;
 }
 
 table.GeneratedTable td, table.GeneratedTable th {
-border-width:2px;
-border-color:#030303;
-border-style:solid;
-padding:3px;
+  border-width: 2px;
+  border-color: #030303;
+  border-style: solid;
+  padding: 3px;
 }
 
 table.GeneratedTable thead {
-background-color:#000000;
+  background-color: #000000;
 }
 
 body {
-  background: url('/Assets/images/background2.png') center center/cover ;
+  background: url('/Assets/images/background2.png') center center/cover;
   background-repeat: no-repeat;
 }
 
 
 /* style=" */
-@media screen and (min-width:1000px){
-  #navbarSupportedContent{
+@media screen and (min-width:1000px) {
+  #navbarSupportedContent {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 0 20px;
   }
 }
 
-.edit-form-inputs{
+.edit-form-inputs {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.edit-form-inputs >div{
+
+.edit-form-inputs>div {
   width: 49.5%;
 }
-.jumbotron{
-  margin:25px;
+
+.jumbotron {
+  margin: 25px;
 }
-.align-center{
+
+.align-center {
   min-height: 70vh;
   display: grid;
   place-items: center;
 }
-footer{
+
+footer {
   background-color: rgb(17, 17, 17);
   bottom: 0;
   position: fixed;
